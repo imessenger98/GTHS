@@ -2,3 +2,6 @@ footer a{
     text-decoration:none;
     color: white;
 }
+.aboutus{
+    background-image: url('/images/hero-bg.png');
+}
