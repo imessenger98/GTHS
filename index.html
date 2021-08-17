@@ -4,357 +4,373 @@
     <title> Govt. Technical High School </title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+  <script src="index.js"></script>
   </head>
   <body>
-    <div class="jumbotron  jumbotron-fluid">
-      <div class="container ">
-        <h3 class="display-6 text-center">Govt. Technical High School</h3>
-        <marquee behavior="scroll" direction="left">Adimali, Kerala 685561, India. &nbsp;&nbsp;&nbsp;&nbsp;for Admission/Queries contact:+911234567890</marquee>
+    <div id="loader">
+     <div class="container-fluid" style="width: 100%;height: 100%;">
+      <div class="row justify-content-center align-items-center text-center">
+        <div class="spinner-border text-dark" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+       </div>
       </div>
     </div>
-      <!-- navigation bar starts -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(255, 255, 255);">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <!-- <img src="/images/logo.png" alt="" width="24" height="24" class="d-inline-block align-text-top"> -->
-            Govt. Technical High School logo
-        </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <div id="main-part">
+      <div class="jumbotron  jumbotron-fluid">
+        <div class="container  text-center">
+          <h3 class="display-6 ">Govt. Technical High School</h3>
+          <p>Adimali, Kerala 685561, India</p>
+  
+        </div>
+      </div>
+        <!-- navigation bar starts -->
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(255, 255, 255);">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <!-- <img src="/images/logo.png" alt="" width="24" height="24" class="d-inline-block align-text-top"> -->
+              Govt. Technical High School logo
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Admission</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Academics</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Arts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#facilities">Facilities</a>
+                </li>
+              
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+        <!-- navigation bar ends -->
+        <!-- image slider starts -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000" >
+              <img src="/images/banner/img1.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <!-- <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/images/banner/img2.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <!-- <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/images/banner/img1.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <!-- <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p> -->
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Admission</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Academics</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Arts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#facilities">Facilities</a>
-              </li>
-            
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
-      <!-- navigation bar ends -->
-      <!-- image slider starts -->
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="1000" >
-            <img src="/images/banner/img1.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <!-- <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p> -->
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/images/banner/img2.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <!-- <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p> -->
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/images/banner/img1.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <!-- <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p> -->
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>  
-      <br>
-    <!-- image slider ends -->
-    <!-- admission jumbotron starts -->
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container text-center">
-            <br>
-            <!-- <hr> -->
-            <p class="display-5 ">2021 Admission Started </p>
-            <br>
-            <button  type="button " class="btn btn-outline-dark btn-lg"> <a style="text-decoration: none; color: #000;" href="tel:+911234567890">CONTACT US</a> </button>
-            <br>
-          </div>
-        </div>
-     <!-- admission jumbotron ends -->
-        <!-- about us starts -->
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>  
         <br>
-        <div id="about" class="container aboutus">
-          <div class="row featurette">
-            <hr>
-            <br>
-            <div class="col-md-5">
-              <img class="featurette-image img-fluid mx-auto" src="/images/about.png" alt="aboutus">
-            </div>
-            <div class="col-md-7 text-justify text-center">
-              <p style="font-size: medium;" class="lead ">സ്ഥലം- ഇടുക്കി ജില്ലയിൽ ദേവികുളം താലൂക്കിൽ അടിമാലി ഗ്രാമപഞ്ചായത്ത്
-
-                ചരിത്രം- അടിമാലി മാർക്കറ്റിൽ പണികഴിപ്പിച്ചിരുന്ന 5 കടമുറികളിൽ ടി സ്ഥാ പനം ആരംഭിക്കുവാൻ അംഗീകാരം നൽകിയത് ‍‍‍ഡോ.പി.വാസുദേവൻ, 
-                ഡയറക്ടർ സാങ്കേതിക വിദ്യാസ വകുപ്പ് ആണ്. പഠനസാമഗ്രികളും ഉപകരണ‍ങ്ങളും കോട്ടയം ജില്ലയിലെ പാലായ്ക് അടുത്തുള്ള മുത്തോലി ജൂനിയർ 
-                ടെക്നിക്കൽ സക്കൂളിൽ നിന്നും കെണ്ടുവന്നു.പ്രാരംഭത്തിൽ 13 കുട്ടികൾക്ക് പ്രവേശനം. ആദ്യം സ്പെഷ്യൽ ഒാഫീസർ സൂപ്രണ്ടന്റ് റ്റി.ഐ. തോമസ്. 
-                പിന്നീട് സി.ജെ.പോൾ ,പി.വി.സ്കറിയ , കെ.മുഹമ്മദ് ഹനീഫ , അബ്ദുൾ സലാം ,കുരിയാക്കോസ് തുടങ്ങിയവർ. 1986-ൽ കെ.മുഹമ്മദ് ഹനീഫായുടെ 
-                കാലഘട്ടത്തിൽ 20 പേർക്ക് അഡ്മി‍‍‍ഷൻ നൽകിയിരുന്നത് 30 ആയി ഉയത്തുകയും ആദ്യമായി ഒരു വിദ്യാർത്ഥിനിക്ക് പ്രവേശനം നൽകുകയും ചെയ്തു.
-                
-                തുടർന്ന് സ്ഥലമെടുപ്പ് പ്രക്രിയ ആരംഭിച്ചു.1986-92 കാലഘട്ടത്തിൽ അടിമാലി ഗ്രാമപഞ്ചായത്ത് 3 സ്ഥലങ്ങൾ ഏറ്റെടുക്കുവാൻ ശ്രമം നടത്തിയെങ്കിലും 
-                ,എല്ലാം തന്നെ ചില സാങ്കേതിക കാരണങ്ങളാൽ ഒഴിവാക്കപ്പെടുകയായിരുന്നു. തുടർന്ന് 1992-ൽ റ്റി.ഗോപാലകൃഷ്ണൻ അവറുകളും,1996-ൽ കെ.ആർ.
-                വസന്തകുമാറും സൂപ്രണ്ടായി വന്നു.കാര്യങ്ങൾ പഴയതാപോലെതന്നെ.പിന്നീട് 99-ൽ അടിമാലിയിൽ കാ‍ഞ്ഞിരക്കാട്ട് കൊച്ചുകൃഷ്ണൻ മകൻ 
-                ഡോ. സുധീന്ദ്രന്റെയും ടിയാന്റെ മകൾ മായാ സുധീന്ദ്രന്റെയും ,ടി സമയത്ത് പി.റ്റി.എ.പ്രസിഡന്റായിരുന്ന പരീേതിന്റെയും നേതൃത്വത്തിൽ പ്രവർത്തിച്ച പ.ടി.എ.കമ്മറ്റി സ്ഥലത്തിന്റെ കൺസന്റ് വാങ്ങുകയും </p>
+      <!-- image slider ends -->
+      <!-- admission jumbotron starts -->
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
               <br>
-              <button type="button " class="btn btn-outline-dark btn-lg"> KNOW MORE </button>
+              <!-- <hr> -->
+              <p class="display-5 ">2021 Admission Started </p>
+              <marquee behavior="scroll" direction="left">For Admission/Queries Contact:+911234567890</marquee>
+              <br><button  type="button " class="btn btn-outline-dark btn-lg"> <a style="text-decoration: none; color: #000;" href="tel:+911234567890"></a> </i> CONTACT US &nbsp; <i class="fas fa-phone mr-3"></i></a> </button>
+              <br>
+            </div>
+          </div>
+       <!-- admission jumbotron ends -->
+          <!-- about us starts -->
+          <br>
+          <div id="about" class="container aboutus">
+            <div class="row featurette align-items-center justify-content-center">
+              <hr>
+              <br>
+              <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="/images/about.png" alt="aboutus">
+              </div>
+              <div class="col-md-7 text-justify text-center">
+                <p style="font-size: medium;" class="lead ">സ്ഥലം- ഇടുക്കി ജില്ലയിൽ ദേവികുളം താലൂക്കിൽ അടിമാലി ഗ്രാമപഞ്ചായത്ത്
+  
+                  ചരിത്രം- അടിമാലി മാർക്കറ്റിൽ പണികഴിപ്പിച്ചിരുന്ന 5 കടമുറികളിൽ ടി സ്ഥാ പനം ആരംഭിക്കുവാൻ അംഗീകാരം നൽകിയത് ‍‍‍ഡോ.പി.വാസുദേവൻ, 
+                  ഡയറക്ടർ സാങ്കേതിക വിദ്യാസ വകുപ്പ് ആണ്. പഠനസാമഗ്രികളും ഉപകരണ‍ങ്ങളും കോട്ടയം ജില്ലയിലെ പാലായ്ക് അടുത്തുള്ള മുത്തോലി ജൂനിയർ 
+                  ടെക്നിക്കൽ സക്കൂളിൽ നിന്നും കെണ്ടുവന്നു.പ്രാരംഭത്തിൽ 13 കുട്ടികൾക്ക് പ്രവേശനം. ആദ്യം സ്പെഷ്യൽ ഒാഫീസർ സൂപ്രണ്ടന്റ് റ്റി.ഐ. തോമസ്. 
+                  പിന്നീട് സി.ജെ.പോൾ ,പി.വി.സ്കറിയ , കെ.മുഹമ്മദ് ഹനീഫ , അബ്ദുൾ സലാം ,കുരിയാക്കോസ് തുടങ്ങിയവർ. 1986-ൽ കെ.മുഹമ്മദ് ഹനീഫായുടെ 
+                  കാലഘട്ടത്തിൽ 20 പേർക്ക് അഡ്മി‍‍‍ഷൻ നൽകിയിരുന്നത് 30 ആയി ഉയത്തുകയും ആദ്യമായി ഒരു വിദ്യാർത്ഥിനിക്ക് പ്രവേശനം നൽകുകയും ചെയ്തു.
+                  
+                  തുടർന്ന് സ്ഥലമെടുപ്പ് പ്രക്രിയ ആരംഭിച്ചു.1986-92 കാലഘട്ടത്തിൽ അടിമാലി ഗ്രാമപഞ്ചായത്ത് 3 സ്ഥലങ്ങൾ ഏറ്റെടുക്കുവാൻ ശ്രമം നടത്തിയെങ്കിലും 
+                  ,എല്ലാം തന്നെ ചില സാങ്കേതിക കാരണങ്ങളാൽ ഒഴിവാക്കപ്പെടുകയായിരുന്നു. തുടർന്ന് 1992-ൽ റ്റി.ഗോപാലകൃഷ്ണൻ അവറുകളും,1996-ൽ കെ.ആർ.
+                  വസന്തകുമാറും സൂപ്രണ്ടായി വന്നു.കാര്യങ്ങൾ പഴയതാപോലെതന്നെ.പിന്നീട് 99-ൽ അടിമാലിയിൽ കാ‍ഞ്ഞിരക്കാട്ട് കൊച്ചുകൃഷ്ണൻ മകൻ 
+                  ഡോ. സുധീന്ദ്രന്റെയും ടിയാന്റെ മകൾ മായാ സുധീന്ദ്രന്റെയും ,ടി സമയത്ത് പി.റ്റി.എ.പ്രസിഡന്റായിരുന്ന പരീേതിന്റെയും നേതൃത്വത്തിൽ പ്രവർത്തിച്ച പ.ടി.എ.കമ്മറ്റി സ്ഥലത്തിന്റെ കൺസന്റ് വാങ്ങുകയും </p>
+                <br>
+                <button type="button " class="btn btn-outline-dark btn-lg"> KNOW MORE </button>
+              </div>
+              <br>
             </div>
             <br>
+            <hr>
+  
           </div>
           <br>
-          <hr>
-
-        </div>
-        <br>
-         <!-- about us ends -->
-         <!-- messege from start -->
-         <!-- <hr> -->
-         <div class="container-fluid ">
-          <div class="row text-center align-items-center justify-content-center ">
-            <p class="display-5 ">Message</p>
-            <br>
-            <div class="col-md-5 border  messege">
+           <!-- about us ends -->
+           <!-- messege from start -->
+           <!-- <hr> -->
+           <div class="container-fluid ">
+            <div class="row text-center align-items-center justify-content-center ">
+              <p class="display-5 ">Message</p>
               <br>
-              <img class="rounded-circle img-thumbnail " src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-              <h2 class="blockquote">Name</h2>
-              <p style="font-size:smaller">principal</p>
-
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-              <p><a class="btn btn-outline-dark btn-lg" href="#" role="button">more &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-md-5 border messege">
-              <br>
-              <img class="rounded-circle img-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-              <h2 class="blockquote">Name</h2>
-              <p style="font-size: smaller;">Chairman</p>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-              <p><a class="btn btn-outline-dark btn-lg" href="#" role="button">more &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            
-          </div><!-- /.row -->
-         </div>
-
-        <!-- messege from end -->
-         <br>
-
-           <!-- what we provide  starts-->
-           <section id="facilities" class="facilities">
-             <hr>
-            <div class="container">
-                <h2 class="display-5 text-center"> What We Provide </h2>
+              <div class="col-md-5 border  messege">
                 <br>
-               
-                <div class="row align-items-center justify-content-center text-center">
-                    <div class="col-md-4 img-fluid btn"> <img src="images/what we provide/school bus.png" alt="schoolbus" />
-                      <br>
-                            <h4 style="font-size: medium;">School Transport </h4>
-                        </a> </div>
-                    <div class="col-md-4 img-fluid btn"><img  src="images/what we provide/kinder garden.png" alt="Kindergarten" />
-                      <br>
-                            <h4 style="font-size: medium;"> Kinder Garden </h4>
-                        </a> </div>
-                    <div class="col-md-4 img-fluid btn"><img  src="images/what we provide/interactive class.png" alt="Interactive Classroom" />
-                      <br>
-                            <h4 style="font-size: medium;">Interactive Classroom </h4>
-                        </a> </div>
-                    
-                </div>
+                <img class="rounded-circle img-thumbnail " src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                <h2 class="blockquote">Name</h2>
+                <p style="font-size:smaller">principal</p>
+  
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p><a class="btn btn-outline-dark btn-lg" href="#" role="button">more &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-md-5 border messege">
                 <br>
-                <div class="row align-items-center justify-content-center text-center">
+                <img class="rounded-circle img-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                <h2 class="blockquote">Name</h2>
+                <p style="font-size: smaller;">Chairman</p>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p><a class="btn btn-outline-dark btn-lg" href="#" role="button">more &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              
+            </div><!-- /.row -->
+           </div>
+  
+          <!-- messege from end -->
+           <br>
+  
+             <!-- what we provide  starts-->
+             <section id="facilities" class="facilities">
+               <hr>
+              <div class="container">
+                  <h2 class="display-5 text-center"> What We Provide </h2>
                   <br>
-                  <div class="col-md-4 img-fluid btn"><img  src="images/what we provide/computer lab.png" alt="Computer" />
-                            <h4 style="font-size: medium;">Computer Lab </h4>
-                        </a> </div>
+                 
+                  <div class="row align-items-center justify-content-center text-center">
+                      <div class="col-md-4 btn"> <img width="150" height="150" src="images/what we provide/school bus.png" alt="schoolbus" />
                         <br>
-                    <div class="col-md-4 img-fluid btn"><img  src="images/what we provide/library.png" alt="Library" />
-                            <h4 style="font-size: medium;">Library </h4>
-                        </a> </div>
+                              <h4 style="font-size: medium;">School Transport </h4>
+                          </a> </div>
+                      <div class="col-md-4 btn"><img width="150" height="150" src="images/what we provide/kinder garden.png" alt="Kindergarten" />
                         <br>
-                    <div class="col-md-4 img-fluid btn"><img  src="images/what we provide/sports.png" alt="Sports" />
-                            <h4 style="font-size: medium;">Sports & Games </h4>
-                        </a> </div>
-                </div>
-            </div>
-        </section>
-
-         <hr>
-           <!-- what we provide  ends-->
-
-     <!-- footer starts -->
-     <!-- Footer -->
-<footer style="color: white;background-color: black;" class="page-footer font-small mdb-color pt-4">
-
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left">
-
-    <!-- Footer links -->
-    <div class="row text-center text-md-left mt-3 pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Our Moto</h6>
-        <p style="font-size: small;">"A community of lifelong learners, responsible global citizens, and champions of our own success."</p>
-      </div>
-      <!-- Grid column -->
-
-      <hr class="w-100 clearfix d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-        <p>
-          <a href="#about">About Us</a>
-        </p>
-        <p>
-          <a href="#">Our school</a>
-        </p>
-        <p>
-          <a href="#">Admission</a>
-        </p>
-        <p>
-          <a href="#">Academics</a>
-        </p>
-        <p>
-          <a href="#">Facilities</a>
-        </p>
-      </div>
-      <!-- Grid column -->
-
-      <hr class="w-100 clearfix d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">home</h6>
-        <p>
-          <a href="#">Alumni</a>
-        </p>
-        <p>
-          <a href="#"> Arts</a>
-        </p>
-        <p>
-          <a href="#">staffs</a>
-        </p>
-        <p>
-          <a href="#">Gallery</a>
-        </p>
-      </div>
-
-      <!-- Grid column -->
-      <hr class="w-100 clearfix d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
-        <p>
-          <a href="https://www.google.com/maps/place/GTHS+Adimali,+Kochi-Madurai-Tondi+Point+Rd,+Adimali,+Kerala+685561/@10.0128956,76.9690133,17z/data=!4m2!3m1!1s0x3b0797cdee70f1c5:0xb34615907dc3f195"><i class="fas fa-home mr-3"></i> Adimali, Kerala 685561, India</p></a>
-          </p>
-        <p>
-          <a href="mailto:webmaster@example.com"><i class="fas fa-envelope mr-3"></i>info@gmail.com</p></a>
-        <p>
-          <a href="tel:+6494461709"><i class="fas fa-phone mr-3"></i> +91 01 234 567 88</p></a>
-        <p>
-          <a href="tel:+6494461709"><i class="fas fa-phone mr-3"></i> +91 01 234 567 88</p></a>
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Footer links -->
-
-    <hr>
-
-    <!-- Grid row -->
-    <div class="row d-flex align-items-center">
-
-      <!-- Grid column -->
-      <div class="col-md-7 col-lg-8">
-
-        <!--Copyright-->
-        <p class="text-center text-md-center">© 2021 Copyright:
-          <a href="#">
-            <strong> company.com</strong>
-          </a>
-        </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-5 col-lg-4 ml-lg-0">
-
-        <!-- Social buttons -->
-        <div class="text-center text-md-right">
-          <ul class="list-unstyled list-inline">
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fab fa-google-plus-g"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
+                              <h4 style="font-size: medium;"> Kinder Garden </h4>
+                          </a> </div>
+                      <div class="col-md-4 btn"><img width="150" height="150" src="images/what we provide/interactive class.png" alt="Interactive Classroom" />
+                        <br>
+                              <h4 style="font-size: medium;">Interactive Classroom </h4>
+                          </a> </div>
+                      
+                  </div>
+                  <br>
+                  <div class="row align-items-center justify-content-center text-center">
+                    <br>
+                    <div class="col-md-4  btn"><img width="150" height="150"  src="images/what we provide/computer lab.png" alt="Computer" />
+                              <h4 style="font-size: medium;">Computer Lab </h4>
+                          </a> </div>
+                          <br>
+                      <div class="col-md-4  btn"><img width="150" height="150"  src="images/what we provide/library.png" alt="Library" />
+                              <h4 style="font-size: medium;">Library </h4>
+                          </a> </div>
+                          <br>
+                      <div class="col-md-4 btn"><img width="150" height="150"  src="images/what we provide/sports.png" alt="Sports" />
+                              <h4 style="font-size: medium;">Sports & Games </h4>
+                          </a> </div>
+                  </div>
+              </div>
+          </section>
+  
+           <hr>
+             <!-- what we provide  ends-->
+  
+       <!-- footer starts -->
+       <!-- Footer -->
+  <footer style="color: white;background-color: black;" class="page-footer font-small mdb-color pt-4">
+  
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Footer links -->
+      <div class="row text-center text-md-left mt-3 pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Our Moto</h6>
+          <p style="font-size: small;">"A community of lifelong learners, responsible global citizens, and champions of our own success."</p>
         </div>
-
+        <!-- Grid column -->
+  
+        <hr class="w-100 clearfix d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <p>
+            <a href="#about">About Us</a>
+          </p>
+          <p>
+            <a href="#">Our school</a>
+          </p>
+          <p>
+            <a href="#">Admission</a>
+          </p>
+          <p>
+            <a href="#">Academics</a>
+          </p>
+          <p>
+            <a href="#">Facilities</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="w-100 clearfix d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">home</h6>
+          <p>
+            <a href="#">Alumni</a>
+          </p>
+          <p>
+            <a href="#"> Arts</a>
+          </p>
+          <p>
+            <a href="#">staffs</a>
+          </p>
+          <p>
+            <a href="#">Gallery</a>
+          </p>
+        </div>
+  
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
+          <p>
+            <a href="https://www.google.com/maps/place/GTHS+Adimali,+Kochi-Madurai-Tondi+Point+Rd,+Adimali,+Kerala+685561/@10.0128956,76.9690133,17z/data=!4m2!3m1!1s0x3b0797cdee70f1c5:0xb34615907dc3f195"><i class="fas fa-home mr-3"></i> Adimali, Kerala 685561, India</p></a>
+            </p>
+          <p>
+            <a href="mailto:webmaster@example.com"><i class="fas fa-envelope mr-3"></i>info@gmail.com</p></a>
+          <p>
+            <a href="tel:+6494461709"><i class="fas fa-phone mr-3"></i> +91 01 234 567 88</p></a>
+          <p>
+            <a href="tel:+6494461709"><i class="fas fa-phone mr-3"></i> +91 01 234 567 88</p></a>
+        </div>
+        <!-- Grid column -->
+  
       </div>
-      <!-- Grid column -->
-
+      <!-- Footer links -->
+  
+      <hr>
+  
+      <!-- Grid row -->
+      <div class="row d-flex align-items-center">
+  
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8">
+  
+          <!--Copyright-->
+          <p class="text-center text-md-center">© 2021 Copyright:
+            <a href="#">
+              <strong> company.com</strong>
+            </a>
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+  
+          <!-- Social buttons -->
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
     </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-</footer>
+    <!-- Footer Links -->
+  
+  </footer>
+    </div>
+    
 <!-- Footer -->
      <!-- footer ends -->
+<!-- loader screen      -->
+
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
