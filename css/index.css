@@ -3,8 +3,10 @@ footer a{
     color: white;
 }
 .aboutus{
-    background-image: url('/images/hero-bg.png');
+    background-image: url('/images/background.png')
+    
 }
 .messege{
     margin: 10px;
 }
+
