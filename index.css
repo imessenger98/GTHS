@@ -14,21 +14,10 @@ footer a:hover{
     margin: 10px;
 }
 
-
+.zooming:hover {
+    transform: scale(1.2); /* (150% zoom)*/
+  }
 .zooming h4 {
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-
-@media (min-width: 992px) {
-    .zooming:hover {
-        transform: scale(1.2); /* (150% zoom)*/
-      }
-}
-@media (min-width: 768px) { 
-    .zooming:hover {
-        transform: scale(1.2); /* (150% zoom)*/
-      }
-
 }
