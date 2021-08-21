@@ -10,8 +10,9 @@ footer a:hover{
     background-image: url('/images/background.jpg')
     
 }
-.messege{
-    margin: 10px;
+.messspace{
+    padding: 10;
+    margin: 10;
 }
 
 
