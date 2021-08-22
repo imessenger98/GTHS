@@ -1,3 +1,4 @@
+/* index page starts */
 footer a{
     text-decoration:none;
     color: white;
@@ -21,7 +22,6 @@ footer a:hover{
     margin-bottom: 20px;
 }
 
-
 @media (min-width: 992px) {
     .zooming:hover {
         transform: scale(1.2); /* (150% zoom)*/
@@ -33,3 +33,6 @@ footer a:hover{
       }
 
 }
+/* index page end */
+
+/* under constaruction page starts */
