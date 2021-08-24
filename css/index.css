@@ -34,5 +34,6 @@ footer a:hover{
 
 }
 /* index page end */
-
-/* under constaruction page starts */
+.navbar-item a{
+    color: black;
+    }
