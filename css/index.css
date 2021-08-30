@@ -11,6 +11,11 @@ footer a:hover{
     background-image: url('/images/background.jpg')
     
 }
+
+#facilities{
+    background-image: url('/images/background3.png')
+
+}
 .messspace{
     padding: 10;
     margin: 10;
@@ -39,6 +44,9 @@ footer a:hover{
     .zooming:hover {
         transform: scale(1.2); /* (150% zoom)*/
       }
+     #mobile{
+         display: none;
+     } 
      
 
 }
