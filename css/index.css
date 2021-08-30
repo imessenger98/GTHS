@@ -32,6 +32,8 @@ footer a:hover{
     .zooming:hover {
         transform: scale(1.2); /* (150% zoom)*/
       }
+
+    
     }
 @media (min-width: 768px) { 
     .zooming:hover {
